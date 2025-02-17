@@ -1,0 +1,17 @@
+.container {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#documentTree ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#documentTree li {
+    margin: 5px 0;
+}

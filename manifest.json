@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Outline Bulk document move",
+  "version": "1.1",
+  "description": "Outline wiki Bulk manage document moving.",
+  "permissions": [
+    "storage",
+    "scripting",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Outline Bulk document move",
+    "default_popup": "manager.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "turndown.js",
+        "PRIVACY.md",
+        "manager.html",
+        "manager.js",
+        "styles/manager.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

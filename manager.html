@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Outline Document Mover</title>
+    <link rel="stylesheet" href="styles/manager.css">
+</head>
+<body>
+<div class="container">
+    <h1>Document Mover</h1>
+    <!-- New Refresh Collections Button -->
+    <div class="form-group">
+        <button id="refreshCollections">Refresh Collections</button>
+    </div>
+    <div class="form-group">
+        <label for="collectionSelect">Source Collection:</label>
+        <select id="collectionSelect"></select>
+    </div>
+    <div class="form-group">
+        <input type="checkbox" id="selectAllCheckbox">
+        <label for="selectAllCheckbox">Select All</label>
+    </div>
+    <div id="documentTree"></div>    <div class="form-group">
+        <label for="destinationCollection">Destination Collection:</label>
+        <select id="destinationCollection"></select>
+    </div>
+    <div class="form-group">
+        <label for="destinationFolder">Destination Folder (optional):</label>
+        <select id="destinationFolder">
+            <option value="">Collection Root</option>
+        </select>
+    </div>
+    <!-- New subfolder dropdown -->
+    <div class="form-group">
+        <label for="destinationSubFolder">Subfolder (optional):</label>
+        <select id="destinationSubFolder">
+            <option value="">None</option>
+        </select>
+    </div>
+
+    <button id="moveBtn">Move Selected Documents</button>
+</div>
+<script type="module" src="manager.js"></script>
+</body>
+</html>
